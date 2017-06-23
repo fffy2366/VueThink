@@ -18,7 +18,7 @@ import 'nprogress/nprogress.css'
 import 'assets/css/global.css'
 import 'assets/css/base.css'
 
-axios.defaults.baseURL = HOST
+axios.defaults.baseURL = 'http://vuethink.dev/'
 axios.defaults.timeout = 1000 * 15
 axios.defaults.headers.authKey = Lockr.get('authKey')
 axios.defaults.headers.sessionId = Lockr.get('sessionId')
@@ -47,7 +47,7 @@ Vue.use(VueRouter)
 
 window.router = router
 window.store = store
-window.HOST = HOST
+window.HOST = 'http://vuethink.dev/'
 window.axios = axios
 window._ = _
 window.moment = moment
